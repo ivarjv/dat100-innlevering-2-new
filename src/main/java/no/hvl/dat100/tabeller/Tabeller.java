@@ -94,13 +94,14 @@ public class Tabeller {
         int[] sammenlagtTabell = new int[tabell1.length + tabell2.length];
 
         for(int i = 0; i < tabell1.length; i++) {
-
+            sammenlagtTabell[i] = tabell1[i];
         }
 
         for(int i = 0; i < tabell2.length; i++) {
-
+            sammenlagtTabell[tabell1.length + i] = tabell2[i];
         }
         return sammenlagtTabell;
 
 	}
 }
+// Kloningen funket ikke i vår første repository, har kopiert over kodene fra den over hit
